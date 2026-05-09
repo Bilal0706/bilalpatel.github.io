@@ -1,0 +1,90 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'a b'
+    'c d';
+    grid-template-rows: auto 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+
+    background: linear-gradient(135deg, #f8f9fa, #f2f3f5);
+}
+header{
+    grid-area: header;
+}
+#a{
+    grid-area: a;
+}
+#b{
+    grid-area: b;
+}
+#c{
+    grid-area: c;
+}
+#d{
+    grid-area: d;
+}
+
+
+/*Navigation Styling - copy and paste*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    font-family: Quicksand;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+#name{
+    font-weight: 600;
+    font-family: Playfair display;
+}
+a:hover{
+    color: rgb(247, 213, 26);
+}
+
+/*Container styling*/
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner_container{
+    background: linear-gradient(135deg, #eeeff0, #d1d1d3);
+    width: 60%;
+    height: 80%;
+
+    border: solid 2pt black;
+    border-radius: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner_container h2{
+    font-family: Montserrat;
+    font-size: 1.5em;
+    font-style: italic;
+    padding: 5%;
+}
+.inner_container p{
+    font-family: Quicksand;
+    font-size: 1em;
+
+    padding-top: 5%;
+    max-width: 80%;
+}

@@ -1,0 +1,85 @@
+/*Body Styling*/
+body{
+   min-height: 100vh;
+   display: grid;
+   grid-template-areas:
+        'header header'
+        'blog button';
+    grid-template-rows: auto 1fr;
+    background: linear-gradient(180deg, #f8f9fa, #ffffff);
+}
+#Navigation{
+    grid-area: header;
+    background-color: white;
+}
+#blog-content{
+    grid-area: blog;
+}
+#button{
+    grid-area: button;;
+}
+
+/*Navigation Styling - copy and paste*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+a{
+    text-decoration: none;
+    font-family: Quicksand;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+#name{
+    font-weight: 600;
+    font-family: Playfair display;
+}
+a:hover{
+    color: rgb(247, 213, 26);
+}
+
+/*Button styling*/
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    border: solid 1pt black;
+    padding: 2%;
+    border-radius: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+}
+
+/*Blog content styling*/
+#blog-content{
+    padding: 2%;
+}
+.date{
+    font-family: Quicksand;
+    text-align: right;
+}
+.title{
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 1.5em;
+}
+.details{
+    font-family: Quicksand;
+    text-align: left;
+}

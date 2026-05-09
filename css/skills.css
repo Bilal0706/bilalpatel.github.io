@@ -1,0 +1,151 @@
+body{
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f8f9fa, #ffffff);
+    display: grid;
+    grid-template-areas:
+    'header'
+    'experience'
+    'skills';
+    grid-template-rows: 0.4fr auto auto;
+}
+#skills_container{
+    grid-area: skills;
+}
+#experience{
+    grid-area: experience;
+}
+header{
+    grid-area: header;
+    background-color: white;
+}
+/*Navigation Styling - copy and paste*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+a{
+    text-decoration: none;
+    font-family: Quicksand;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+#name{
+    font-weight: 600;
+    font-family: Playfair display;
+}
+a:hover{
+    color: rgb(247, 213, 26);
+}
+
+
+/*Skills styling*/
+#skills_container{
+    display: flex;
+    justify-content: center;
+}
+
+#skills{
+    height: 40vh;
+    width: 70%;
+
+    padding-left: 30%;
+}
+#skills h2{
+    font-size: 2em;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 700;
+
+    padding-bottom: 2%;
+}
+.row{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.row p{
+    font-size: 2em;
+    font-family: Quicksand;
+    width: 20%;
+}
+.container_bar{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    
+}
+#bar1{
+    width: 90%;
+    height: 60%;
+    background-color: rgb(0, 0, 0);
+
+}
+#bar2{
+    width: 80%;
+    height: 60%;
+    background-color: rgb(0, 0, 0);
+}
+#bar3{
+    width: 80%;
+    height: 60%;
+    background-color: rgb(0, 0, 0);
+}
+#bar4{
+    width: 60%;
+    height: 60%;
+    background-color: black;
+}
+#bar5{
+    width: 60%;
+    height: 60%;
+    background-color: black;
+}
+
+/*Experience Styling*/
+#experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+#experience h2{
+    font-family: Montserrat;
+    font-size: 2em;
+    padding-right: 40%;
+}
+#experience ul{
+    list-style: none;
+}
+.first{
+    padding-left: 2.5%;
+}
+.date{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.date em{
+    font-weight: 400;
+}
+.description{
+    font-family: Quicksand;
+    max-width: 65%;
+    font-size: 1.1em;
+    padding: 2%;
+}
+ul ul{
+    list-style: none;
+}

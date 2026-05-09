@@ -1,0 +1,101 @@
+body{
+   min-height: 100vh;
+   display: grid; 
+   grid-template-areas: 
+   'header'
+   'content';
+   grid-template-rows: 1fr 14fr;
+}
+#content{
+    grid-area: content;
+}
+#header{
+    grid-area: header;
+}
+
+/*Navigation Styling - copy and paste*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+a{
+    text-decoration: none;
+    font-family: Quicksand;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+#name{
+    font-weight: 600;
+    font-family: Playfair display;
+}
+a:hover{
+    color: rgb(247, 213, 26);
+}
+
+/*Content styling*/
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 10%;
+    gap: 3rem;
+}
+#content section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content section h1{
+    font-family: Playfair display;
+    font-size: 4em;
+}
+#content section article{
+    font-family: Quicksand;
+}
+
+/*list styling*/
+#list ul{
+    list-style: none;
+    display: flex;
+    gap: 7rem;
+
+    padding-right: 8%;
+}
+#list ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#list ul li p{
+    font-family: Quicksand;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+figure figcaption{
+    font-family: Playfair display;
+    font-size: 1.5em;
+    color: grey;
+    font-weight: 700;
+}
+/*image styling*/
+img{
+    height: 10vh;
+}

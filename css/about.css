@@ -1,0 +1,152 @@
+/*Overall Webpage layout*/
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 6fr;
+    grid-template-rows: 0.4fr auto auto auto auto;
+    grid-template-areas: 
+        'header header header header header'
+        'figure figure about about about'
+        'figure figure about about about'
+        'figure figure education education aside'
+        'figure figure education education aside';
+    background: linear-gradient(180deg, #f8f9fa, #ffffff);
+}
+header{
+    grid-area: header;
+    background-color: white;
+}
+figure{
+    grid-area: figure;
+    
+    display: flex;
+    align-items: center;
+}
+#about{
+    grid-area: about;
+}
+#education{
+    grid-area: education;
+}
+aside{
+    grid-area: aside;
+}
+
+/*Navigation Styling - copy and paste*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+a{
+    text-decoration: none;
+    font-family: Quicksand;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+#name{
+    font-weight: 600;
+    font-family: Playfair display;
+}
+a:hover{
+    color: rgb(247, 213, 26);
+}
+
+/*img styling*/
+img{
+    height: 70%;
+    width: 95%;
+    border-radius: 50%;
+    border: solid 5pt black;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+figcaption{
+    padding-top: 5%;
+    font-family: Quicksand;
+    font-size: 1.5em;
+}
+
+
+
+
+/*education styling*/
+#education{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#education h2{
+    font-family: Montserrat;
+    font-size: 2em;
+}
+#education ul ul{
+    list-style: none;
+}
+.date{
+    font-family: Playfair display;
+    font-size: 1em;
+    font-weight: 400;
+    color: rgb(59, 59, 59);
+}
+.info{
+    font-family: Quicksand;
+
+}
+
+
+
+
+/*About me Styling*/
+#about{
+    padding-top: 5%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about h2{
+    font-family: Montserrat;
+    font-size: 2em;
+    color: rgb(24, 19, 19);
+}
+
+#about article{
+    font-family: Quicksand;
+    font-size: 1em;
+    color: rgb(59, 59, 59);
+    text-align: center;
+    max-width: 60%;
+}
+
+/*Aside styling*/
+#hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#hobbies h2{
+    font-family: Montserrat;
+    font-size: 2em;
+    color: rgb(24, 19, 19);
+}
+#hobbies ul li p{
+    font-family: Quicksand;
+    font-size: 1em;
+    color: rgb(59, 59, 59);
+}

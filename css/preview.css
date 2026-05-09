@@ -1,0 +1,18 @@
+#buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.edit-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+#edit, #upload{
+    width: 30%;
+    font-family: Quicksand;
+    font-size: 1em;;
+    padding: 5%;
+}

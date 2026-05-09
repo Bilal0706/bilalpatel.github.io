@@ -1,0 +1,87 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+/*container styling*/
+#container{
+    position: relative;
+    height: 50vh;
+    width: 70vh;
+
+    background-color: rgb(151, 135, 223);
+}
+
+/*blog styling*/
+h2{
+    text-align: center;
+    font-size: 2em;
+    font-family: Quicksand;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+label{
+    display: block;
+    font-size: 1.5em;
+}
+#input_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#input_container p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p input{
+    width: 80%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+#details{
+    padding-bottom: 20%;
+}
+
+/*list styling*/
+form ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+form ul li{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form ul li input{
+    width: 100%;
+    padding: 20%;
+
+    font-family: Quicksand;
+    font-size: 1em;
+}
+form ul li input:hover{
+    background-color: gold;
+    color: white;
+}
+
+
+a{
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+
+}
+
